@@ -10,28 +10,52 @@ import Foundation
 import UIKit
 import QuartzCore
 
+var kAlwaysBouncePlaceholderPointer: Void?
+var kAbbriviatedPlaceholderPointer: Void?
+var kPlaceholderLabelPointer: Void?
+var kRightPlaceholderLabelPointer: Void?
+
+let kAnimationDuration: CFTimeInterval = 0.6
+
 extension UITextField {
+    
     @IBInspectable public var alwaysBouncePlaceholder: Bool {
         set(newValue) {
-            
+            chx_placeholderLabel.hidden = !newValue
+            objc_setAssociatedObject(self, &kAlwaysBouncePlaceholderPointer, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
-        get{
+        get {
+            let alwaysBouncePlaceholderObject: AnyObject? = objc_getAssociatedObject(self, &kAlwaysBouncePlaceholderPointer)
+            if let alwaysBouncePlaceholder = alwaysBouncePlaceholderObject?.boolValue {
+                return alwaysBouncePlaceholder
+            }
             return false
         }
     }
     
     @IBInspectable public var abbreviatedPlaceholder: String? {
         set(newValue) {
-
+            chx_rightPlaceHolderLabel.text = newValue
+            objc_setAssociatedObject(self, &kAbbriviatedPlaceholderPointer, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
         get {
-            return ""
+            let abbreviatedPlaceholderObject: AnyObject? = objc_getAssociatedObject(self, &kAbbriviatedPlaceholderPointer)
+            if let abbreviatedPlaceholder: AnyObject? = abbreviatedPlaceholderObject {
+                return abbreviatedPlaceholder as? String
+            }
+            return .None
         }
     }
     
     private var widthOfAbbreviatedPlaceholder: Float {
         get {
-            return 1.0
+            let rightPlaceholder: String? = !abbreviatedPlaceholder!.isEmpty ? abbreviatedPlaceholder : placeholder
+            if let rightPlaceholder = rightPlaceholder {
+                let attributes = [NSFontAttributeName: chx_rightPlaceHolderLabel.font]
+                let abbreviatedSize = rightPlaceholder.sizeWithAttributes(attributes)
+                return Float(abbreviatedSize.width)
+            }
+            return 0
         }
     }
     
@@ -46,8 +70,6 @@ extension UITextField {
             return UILabel()
         }
     }
-    
-    // override public func drawPlaceholderInRect(Rect: CGRect) {}
     
     func didChange(notification: NSNotification) {
         guard notification.object === self else {
