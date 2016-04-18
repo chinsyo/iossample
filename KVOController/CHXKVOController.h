@@ -21,6 +21,23 @@ typedef void (^CHXKVONotificationBlock)(id _Nullable observer, id object, NSDict
 
 @interface CHXKVOController : NSObject
 
+@property (nullable, nonatomic, weak, readonly) id observer;
+
++ (instancetype)controllerWithObserver:(nullable id)observer;
+- (instancetype)initWithObserver:(nullable id)observer retainObserved:(BOOL)retainObserved;
+- (instancetype)initWithObserver:(nullable id)observer;
+
+- (void)observe:(nullable id)object keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options block:(CHXKVONotificationBlock)block;
+- (void)observe:(nullable id)object keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options action:(SEL)action;
+- (void)observe:(nullable id)object keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context;
+
+- (void)observe:(nullable id)object keyPaths:(NSArray <NSString *>*)keyPaths options:(NSKeyValueObservingOptions)options block:(CHXKVONotificationBlock)block;
+- (void)observe:(nullable id)object keyPaths:(NSArray <NSString *>*)keyPaths options:(NSKeyValueObservingOptions)options actions:(SEL)action;
+- (void)observe:(nullable id)object keyPaths:(NSArray <NSString *>*)keyPaths options:(NSKeyValueObservingOptions)options context:(nullable void *)context;
+
+- (void)unobserve:(nullable id)object keyPath:(NSString *)keyPath;
+- (void)unobserve:(nullable id)object;
+- (void)unobserveAll;
 @end
 
 NS_ASSUME_NONNULL_END
