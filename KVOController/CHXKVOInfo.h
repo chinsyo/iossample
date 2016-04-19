@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "CHXKVOController.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 #pragma mark - Utilities
 static NSString *describe_option(NSKeyValueObservingOptions option) {
     switch (option) {
@@ -68,14 +70,12 @@ static NSString *describe_options(NSKeyValueObservingOptions options) {
 
 #pragma mark - CHXKVOInfo
 
-
 typedef NS_ENUM(uint8_t, CHXKVOInfoState) {
     CHXKVOInfoStateInitial = 0,
     CHXKVOInfoStateObserving,
     CHXKVOInfoStateNotObserving,
 };
 
-NS_ASSUME_NONNULL_BEGIN
 @interface CHXKVOInfo : NSObject
 @property (weak, nonatomic) CHXKVOController *controller;
 @property (copy, nonatomic) CHXKVONotificationBlock block;
@@ -85,15 +85,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) void *context;
 @property (nonatomic) CHXKVOInfoState state;
 
-- (instancetype)initWithController:(CHXKVOController *)controller
-                           keyPath:(NSString *)keyPath
-                           options:(NSKeyValueObservingOptions)options
-                             block:(nullable CHXKVONotificationBlock)block
-                            action:(nullable SEL)action
-                           context:(void *)context;
 - (instancetype)initWithController:(CHXKVOController *)controller keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options block:(CHXKVONotificationBlock)block;
+
 - (instancetype)initWithController:(CHXKVOController *)controller keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options action:(SEL)action;
+
 - (instancetype)initWithController:(CHXKVOController *)controller keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context;
+
 - (instancetype)initWithController:(CHXKVOController *)controller keyPath:(NSString *)keyPath;
+
 @end
 NS_ASSUME_NONNULL_END

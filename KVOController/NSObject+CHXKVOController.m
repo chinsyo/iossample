@@ -7,8 +7,7 @@
 //
 
 #import "NSObject+CHXKVOController.h"
-#import <libkern/OSAtomic.h>
-#import <objc/message.h>
+#import <objc/runtime.h>
 
 #if !__has_feature(objc_arc)
 #error This file must be compiled with ARC. Convert you project to ARC or specify the -objc-arc flag.

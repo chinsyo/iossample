@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6577632D1CC604A600587ED7 /* Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6577632C1CC604A600587ED7 /* Clock.m */; settings = {ASSET_TAGS = (); }; };
+		657763301CC604AF00587ED7 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6577632F1CC604AF00587ED7 /* ClockView.m */; settings = {ASSET_TAGS = (); }; };
+		657763331CC604B800587ED7 /* ClockLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 657763321CC604B800587ED7 /* ClockLayer.m */; settings = {ASSET_TAGS = (); }; };
 		657960501CBE152D006D7A60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6579604F1CBE152D006D7A60 /* main.m */; };
 		657960531CBE152D006D7A60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 657960521CBE152D006D7A60 /* AppDelegate.m */; };
-		657960561CBE152D006D7A60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657960551CBE152D006D7A60 /* ViewController.m */; };
+		657960561CBE152D006D7A60 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657960551CBE152D006D7A60 /* ClockViewController.m */; };
 		657960591CBE152D006D7A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657960571CBE152D006D7A60 /* Main.storyboard */; };
 		6579605B1CBE152D006D7A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6579605A1CBE152D006D7A60 /* Assets.xcassets */; };
 		6579605E1CBE152D006D7A60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6579605C1CBE152D006D7A60 /* LaunchScreen.storyboard */; };
@@ -19,12 +22,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6577632B1CC604A600587ED7 /* Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clock.h; sourceTree = "<group>"; };
+		6577632C1CC604A600587ED7 /* Clock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clock.m; sourceTree = "<group>"; };
+		6577632E1CC604AF00587ED7 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		6577632F1CC604AF00587ED7 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
+		657763311CC604B800587ED7 /* ClockLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockLayer.h; sourceTree = "<group>"; };
+		657763321CC604B800587ED7 /* ClockLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockLayer.m; sourceTree = "<group>"; };
 		6579604B1CBE152D006D7A60 /* KVOController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVOController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6579604F1CBE152D006D7A60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		657960511CBE152D006D7A60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		657960521CBE152D006D7A60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		657960541CBE152D006D7A60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		657960551CBE152D006D7A60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		657960541CBE152D006D7A60 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		657960551CBE152D006D7A60 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		657960581CBE152D006D7A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6579605A1CBE152D006D7A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6579605D1CBE152D006D7A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,8 +80,14 @@
 			children = (
 				657960511CBE152D006D7A60 /* AppDelegate.h */,
 				657960521CBE152D006D7A60 /* AppDelegate.m */,
-				657960541CBE152D006D7A60 /* ViewController.h */,
-				657960551CBE152D006D7A60 /* ViewController.m */,
+				657960541CBE152D006D7A60 /* ClockViewController.h */,
+				657960551CBE152D006D7A60 /* ClockViewController.m */,
+				6577632B1CC604A600587ED7 /* Clock.h */,
+				6577632C1CC604A600587ED7 /* Clock.m */,
+				6577632E1CC604AF00587ED7 /* ClockView.h */,
+				6577632F1CC604AF00587ED7 /* ClockView.m */,
+				657763311CC604B800587ED7 /* ClockLayer.h */,
+				657763321CC604B800587ED7 /* ClockLayer.m */,
 				657960571CBE152D006D7A60 /* Main.storyboard */,
 				6579605A1CBE152D006D7A60 /* Assets.xcassets */,
 				6579605C1CBE152D006D7A60 /* LaunchScreen.storyboard */,
@@ -174,10 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6577632D1CC604A600587ED7 /* Clock.m in Sources */,
 				657960691CBE1559006D7A60 /* CHXKVOController.m in Sources */,
 				6579606C1CBE156A006D7A60 /* NSObject+CHXKVOController.m in Sources */,
+				657763331CC604B800587ED7 /* ClockLayer.m in Sources */,
 				6579606F1CBE1596006D7A60 /* CHXKVOInfo.m in Sources */,
-				657960561CBE152D006D7A60 /* ViewController.m in Sources */,
+				657960561CBE152D006D7A60 /* ClockViewController.m in Sources */,
+				657763301CC604AF00587ED7 /* ClockView.m in Sources */,
 				657960531CBE152D006D7A60 /* AppDelegate.m in Sources */,
 				657960501CBE152D006D7A60 /* main.m in Sources */,
 			);
@@ -326,6 +344,7 @@
 				657960641CBE152D006D7A60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

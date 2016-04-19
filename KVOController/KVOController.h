@@ -9,5 +9,8 @@
 #ifndef KVOController_h
 #define KVOController_h
 
+#import "CHXKVOInfo.h"
+#import "CHXKVOController.h"
+#import "NSObject+CHXKVOController.h"
 
 #endif /* KVOController_h */

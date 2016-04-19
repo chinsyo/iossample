@@ -15,7 +15,7 @@
                            options:(NSKeyValueObservingOptions)options
                              block:(nullable CHXKVONotificationBlock)block
                             action:(nullable SEL)action
-                           context:(void *)context {
+                           context:(nullable void *)context {
     
     if (self = [super init]) {
         _controller = controller;

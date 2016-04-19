@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ClockViewController.h
 //  KVOController
 //
 //  Created by 王晨晓 on 16/4/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ClockViewController : UIViewController
 
 
 @end

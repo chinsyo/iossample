@@ -9,7 +9,6 @@
 #import "CHXKVOController.h"
 #import "CHXKVOInfo.h"
 #import <libkern/OSAtomic.h>
-#import <objc/message.h>
 
 @interface _CHXKVOSharedController : NSObject
 
@@ -271,31 +270,72 @@
 
 #pragma mark - API
 - (void)observe:(nullable id)object keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options block:(CHXKVONotificationBlock)block {
-
+    NSAssert(0 != keyPath.length && NULL != block, @"required parameters observe:%@ keyPath:%@ block:%p", object, keyPath, block);
+    if (nil == object || 0 == keyPath.length || NULL == block) {
+        return;
+    }
+    
+    CHXKVOInfo *info = [[CHXKVOInfo alloc] initWithController:self keyPath:keyPath options:options block:block];
+    [self _observe:object info:info];
 }
 
 - (void)observe:(nullable id)object keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options action:(SEL)action {
-
+    NSAssert(0 != keyPath.length && NULL != keyPath, @"missing required parameters observe:%@ action:%@", object, NSStringFromSelector(action));
+    NSAssert([_observer respondsToSelector:action], @"%@ does not respond to %@", _observer, NSStringFromSelector(action));
+    if (nil == object || 0 == keyPath.length || NULL == action) {
+        return;
+    }
+    
+    CHXKVOInfo *info = [[CHXKVOInfo alloc] initWithController:self keyPath:keyPath options:options action:action];
+    [self _observe:object info:info];
 }
 
 - (void)observe:(nullable id)object keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context {
-
+    NSAssert(0 != keyPath.length, @"missing required parameters observe:%@ keyPath:%@", object, keyPath);
+    if (nil == object || 0 == keyPath.length) {
+        return;
+    }
+    
+    CHXKVOInfo *info = [[CHXKVOInfo alloc] initWithController:self keyPath:keyPath options:options context:context];;
+    [self _observe:object info:info];
 }
 
 - (void)observe:(nullable id)object keyPaths:(NSArray <NSString *>*)keyPaths options:(NSKeyValueObservingOptions)options block:(CHXKVONotificationBlock)block {
-
+    NSAssert(0 != keyPaths.count && NULL != block, @"required parameters observe:%@ keyPaths:%@ block:%p", object, keyPaths, block);
+    if (nil == object || 0 == keyPaths.count || NULL == block) {
+        return;
+    }
+    
+    for (NSString *keyPath in keyPaths) {
+        [self observe:object keyPath:keyPath options:options block:block];
+    }
 }
 
 - (void)observe:(nullable id)object keyPaths:(NSArray <NSString *>*)keyPaths options:(NSKeyValueObservingOptions)options actions:(SEL)action {
-
+    NSAssert(0 != keyPaths.count && NULL != action, @"missing required parameters observe:%@ keyPath:%@ action:%@", object, keyPaths, NSStringFromSelector(action));
+    NSAssert([_observer respondsToSelector:action], @"%@ does not respond to %@", _observer, NSStringFromSelector(action));
+    if (nil == object || 0 == keyPaths.count || NULL == action) {
+        return;
+    }
+    
+    for (NSString *keyPath in keyPaths) {
+        [self observe:object keyPath:keyPath options:options action:action];
+    }
 }
 
 - (void)observe:(nullable id)object keyPaths:(NSArray <NSString *>*)keyPaths options:(NSKeyValueObservingOptions)options context:(nullable void *)context {
-    CHXKVOInfo *info = [CHXKVOInfo alloc];
+    NSAssert( 0 != keyPaths.count, @"missing required parameters observe:%@ keyPath:%@", object, keyPaths);
+    if (nil != object || 0 == keyPaths.count) {
+        return;
+    }
+    for (NSString *keyPath in keyPaths) {
+        [self observe:object keyPath:keyPath options:options context:context];
+    }
 }
 
 - (void)unobserve:(nullable id)object keyPath:(NSString *)keyPath {
-
+    CHXKVOInfo *info = [[CHXKVOInfo alloc] initWithController:self keyPath:keyPath];
+    [self _unobserve:object info:info];
 }
 
 - (void)unobserve:(nullable id)object {
