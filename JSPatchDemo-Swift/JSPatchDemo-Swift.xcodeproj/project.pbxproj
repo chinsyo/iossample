@@ -12,6 +12,11 @@
 		65C3AF221CC746480023A7F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C3AF201CC746480023A7F4 /* Main.storyboard */; };
 		65C3AF241CC746480023A7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C3AF231CC746480023A7F4 /* Assets.xcassets */; };
 		65C3AF271CC746480023A7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C3AF251CC746480023A7F4 /* LaunchScreen.storyboard */; };
+		65C3AF321CC746750023A7F4 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C3AF301CC746750023A7F4 /* JPEngine.m */; settings = {ASSET_TAGS = (); }; };
+		65C3AF331CC746750023A7F4 /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 65C3AF311CC746750023A7F4 /* JSPatch.js */; settings = {ASSET_TAGS = (); }; };
+		65C3AF361CC7495A0023A7F4 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C3AF351CC7495A0023A7F4 /* JavaScriptCore.framework */; };
+		65C3AF381CC74B1D0023A7F4 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3AF371CC74B1D0023A7F4 /* TestObject.swift */; settings = {ASSET_TAGS = (); }; };
+		65C3AF3A1CC74CAD0023A7F4 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 65C3AF391CC74CAD0023A7F4 /* demo.js */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		65C3AF231CC746480023A7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65C3AF261CC746480023A7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65C3AF281CC746480023A7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C3AF2E1CC746740023A7F4 /* JSPatchDemo-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSPatchDemo-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		65C3AF2F1CC746750023A7F4 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
+		65C3AF301CC746750023A7F4 /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
+		65C3AF311CC746750023A7F4 /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
+		65C3AF351CC7495A0023A7F4 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		65C3AF371CC74B1D0023A7F4 /* TestObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
+		65C3AF391CC74CAD0023A7F4 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C3AF361CC7495A0023A7F4 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +51,11 @@
 		65C3AF101CC746480023A7F4 = {
 			isa = PBXGroup;
 			children = (
+				65C3AF351CC7495A0023A7F4 /* JavaScriptCore.framework */,
+				65C3AF341CC7467F0023A7F4 /* JSPatch */,
 				65C3AF1B1CC746480023A7F4 /* JSPatchDemo-Swift */,
 				65C3AF1A1CC746480023A7F4 /* Products */,
+				65C3AF2E1CC746740023A7F4 /* JSPatchDemo-Swift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +72,24 @@
 			children = (
 				65C3AF1C1CC746480023A7F4 /* AppDelegate.swift */,
 				65C3AF1E1CC746480023A7F4 /* ViewController.swift */,
+				65C3AF371CC74B1D0023A7F4 /* TestObject.swift */,
+				65C3AF391CC74CAD0023A7F4 /* demo.js */,
 				65C3AF201CC746480023A7F4 /* Main.storyboard */,
 				65C3AF231CC746480023A7F4 /* Assets.xcassets */,
 				65C3AF251CC746480023A7F4 /* LaunchScreen.storyboard */,
 				65C3AF281CC746480023A7F4 /* Info.plist */,
 			);
 			path = "JSPatchDemo-Swift";
+			sourceTree = "<group>";
+		};
+		65C3AF341CC7467F0023A7F4 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				65C3AF2F1CC746750023A7F4 /* JPEngine.h */,
+				65C3AF301CC746750023A7F4 /* JPEngine.m */,
+				65C3AF311CC746750023A7F4 /* JSPatch.js */,
+			);
+			name = JSPatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +118,7 @@
 		65C3AF111CC746480023A7F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = winsan;
 				TargetAttributes = {
@@ -121,8 +150,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C3AF3A1CC74CAD0023A7F4 /* demo.js in Resources */,
 				65C3AF271CC746480023A7F4 /* LaunchScreen.storyboard in Resources */,
 				65C3AF241CC746480023A7F4 /* Assets.xcassets in Resources */,
+				65C3AF331CC746750023A7F4 /* JSPatch.js in Resources */,
 				65C3AF221CC746480023A7F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C3AF321CC746750023A7F4 /* JPEngine.m in Sources */,
 				65C3AF1F1CC746480023A7F4 /* ViewController.swift in Sources */,
+				65C3AF381CC74B1D0023A7F4 /* TestObject.swift in Sources */,
 				65C3AF1D1CC746480023A7F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,10 +279,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "JSPatchDemo-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.winsan.JSPatchDemo-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JSPatchDemo-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -257,10 +293,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "JSPatchDemo-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.winsan.JSPatchDemo-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JSPatchDemo-Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};

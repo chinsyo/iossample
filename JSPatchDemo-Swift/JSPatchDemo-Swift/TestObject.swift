@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+public class TestObject: NSObject {
+    dynamic func testLog() {
+        print("TestObject original teslog")
+    }
+}
