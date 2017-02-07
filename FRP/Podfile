@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'FRP' do
+	pod 'ReactiveCocoa'
+	pod 'ReactiveViewModel'
+	pod '500px-iOS-api'
+	pod 'SVProgressHUD'
+	pod 'AFImageDownloader'
+	pod 'libextobjc'
+end
+
+target 'FRPTests' do
+	pod 'Specta'
+	pod 'Expecta'
+	pod 'OCMock'
+end
+

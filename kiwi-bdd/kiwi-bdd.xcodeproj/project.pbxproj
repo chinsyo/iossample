@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2781E7222E5E423D43A416D /* libPods-kiwi-bdd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB05D5B3A96913A988FDA7B /* libPods-kiwi-bdd.a */; };
+		D64D79851CD4DB5800D8DCB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D64D79841CD4DB5800D8DCB7 /* main.m */; };
+		D64D79881CD4DB5800D8DCB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D64D79871CD4DB5800D8DCB7 /* AppDelegate.m */; };
+		D64D798B1CD4DB5800D8DCB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64D798A1CD4DB5800D8DCB7 /* ViewController.m */; };
+		D64D798E1CD4DB5800D8DCB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64D798C1CD4DB5800D8DCB7 /* Main.storyboard */; };
+		D64D79901CD4DB5800D8DCB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64D798F1CD4DB5800D8DCB7 /* Assets.xcassets */; };
+		D64D79931CD4DB5800D8DCB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64D79911CD4DB5800D8DCB7 /* LaunchScreen.storyboard */; };
+		D64D799E1CD4DB5900D8DCB7 /* kiwi_bddTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D64D799D1CD4DB5900D8DCB7 /* kiwi_bddTests.m */; };
+		D6CC90A51CD6198F0058D5C5 /* MyStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CC90A41CD6198F0058D5C5 /* MyStack.m */; };
+		D6CC90A71CD61BC50058D5C5 /* MyStackSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CC90A61CD61BC50058D5C5 /* MyStackSpec.m */; };
+		D6CC90A91CD61E730058D5C5 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CC90A81CD61E730058D5C5 /* MathSpec.m */; };
+		F00F3BA77D304209DC0C2D21 /* libPods-kiwi-bddTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F64D8008C5D1451BC8965E /* libPods-kiwi-bddTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D64D799A1CD4DB5900D8DCB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D64D79781CD4DB5800D8DCB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D64D797F1CD4DB5800D8DCB7;
+			remoteInfo = "kiwi-bdd";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14F64D8008C5D1451BC8965E /* libPods-kiwi-bddTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kiwi-bddTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45929795F29067090404D724 /* Pods-kiwi-bddTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiwi-bddTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kiwi-bddTests/Pods-kiwi-bddTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BB05D5B3A96913A988FDA7B /* libPods-kiwi-bdd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kiwi-bdd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61CDD3F5C0D89C200693AA6F /* Pods-kiwi-bdd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiwi-bdd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kiwi-bdd/Pods-kiwi-bdd.debug.xcconfig"; sourceTree = "<group>"; };
+		AA9AE2052E514B46322DE790 /* Pods-kiwi-bdd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiwi-bdd.release.xcconfig"; path = "Pods/Target Support Files/Pods-kiwi-bdd/Pods-kiwi-bdd.release.xcconfig"; sourceTree = "<group>"; };
+		B79592D5986B48276189CE83 /* Pods-kiwi-bddTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiwi-bddTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kiwi-bddTests/Pods-kiwi-bddTests.release.xcconfig"; sourceTree = "<group>"; };
+		D64D79801CD4DB5800D8DCB7 /* kiwi-bdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kiwi-bdd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64D79841CD4DB5800D8DCB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D64D79861CD4DB5800D8DCB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D64D79871CD4DB5800D8DCB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D64D79891CD4DB5800D8DCB7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D64D798A1CD4DB5800D8DCB7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D64D798D1CD4DB5800D8DCB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D64D798F1CD4DB5800D8DCB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D64D79921CD4DB5800D8DCB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D64D79941CD4DB5800D8DCB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64D79991CD4DB5900D8DCB7 /* kiwi-bddTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kiwi-bddTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64D799D1CD4DB5900D8DCB7 /* kiwi_bddTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kiwi_bddTests.m; sourceTree = "<group>"; };
+		D64D799F1CD4DB5900D8DCB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CC90A31CD6198F0058D5C5 /* MyStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStack.h; sourceTree = "<group>"; };
+		D6CC90A41CD6198F0058D5C5 /* MyStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStack.m; sourceTree = "<group>"; };
+		D6CC90A61CD61BC50058D5C5 /* MyStackSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStackSpec.m; sourceTree = "<group>"; };
+		D6CC90A81CD61E730058D5C5 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D64D797D1CD4DB5800D8DCB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2781E7222E5E423D43A416D /* libPods-kiwi-bdd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64D79961CD4DB5900D8DCB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00F3BA77D304209DC0C2D21 /* libPods-kiwi-bddTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		730ED7E8CB97AA15A8CAB6E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BB05D5B3A96913A988FDA7B /* libPods-kiwi-bdd.a */,
+				14F64D8008C5D1451BC8965E /* libPods-kiwi-bddTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D64D79771CD4DB5800D8DCB7 = {
+			isa = PBXGroup;
+			children = (
+				D64D79821CD4DB5800D8DCB7 /* kiwi-bdd */,
+				D64D799C1CD4DB5900D8DCB7 /* kiwi-bddTests */,
+				D64D79811CD4DB5800D8DCB7 /* Products */,
+				EA9D1B81AC8D8E715E95F699 /* Pods */,
+				730ED7E8CB97AA15A8CAB6E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D64D79811CD4DB5800D8DCB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D64D79801CD4DB5800D8DCB7 /* kiwi-bdd.app */,
+				D64D79991CD4DB5900D8DCB7 /* kiwi-bddTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D64D79821CD4DB5800D8DCB7 /* kiwi-bdd */ = {
+			isa = PBXGroup;
+			children = (
+				D64D79861CD4DB5800D8DCB7 /* AppDelegate.h */,
+				D64D79871CD4DB5800D8DCB7 /* AppDelegate.m */,
+				D64D79891CD4DB5800D8DCB7 /* ViewController.h */,
+				D64D798A1CD4DB5800D8DCB7 /* ViewController.m */,
+				D6CC90A31CD6198F0058D5C5 /* MyStack.h */,
+				D6CC90A41CD6198F0058D5C5 /* MyStack.m */,
+				D64D798C1CD4DB5800D8DCB7 /* Main.storyboard */,
+				D64D798F1CD4DB5800D8DCB7 /* Assets.xcassets */,
+				D64D79911CD4DB5800D8DCB7 /* LaunchScreen.storyboard */,
+				D64D79941CD4DB5800D8DCB7 /* Info.plist */,
+				D64D79831CD4DB5800D8DCB7 /* Supporting Files */,
+			);
+			path = "kiwi-bdd";
+			sourceTree = "<group>";
+		};
+		D64D79831CD4DB5800D8DCB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D64D79841CD4DB5800D8DCB7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D64D799C1CD4DB5900D8DCB7 /* kiwi-bddTests */ = {
+			isa = PBXGroup;
+			children = (
+				D64D799D1CD4DB5900D8DCB7 /* kiwi_bddTests.m */,
+				D6CC90A81CD61E730058D5C5 /* MathSpec.m */,
+				D64D799F1CD4DB5900D8DCB7 /* Info.plist */,
+				D6CC90A61CD61BC50058D5C5 /* MyStackSpec.m */,
+			);
+			path = "kiwi-bddTests";
+			sourceTree = "<group>";
+		};
+		EA9D1B81AC8D8E715E95F699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61CDD3F5C0D89C200693AA6F /* Pods-kiwi-bdd.debug.xcconfig */,
+				AA9AE2052E514B46322DE790 /* Pods-kiwi-bdd.release.xcconfig */,
+				45929795F29067090404D724 /* Pods-kiwi-bddTests.debug.xcconfig */,
+				B79592D5986B48276189CE83 /* Pods-kiwi-bddTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D64D797F1CD4DB5800D8DCB7 /* kiwi-bdd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64D79A21CD4DB5900D8DCB7 /* Build configuration list for PBXNativeTarget "kiwi-bdd" */;
+			buildPhases = (
+				74C6FFFF90221434697C600B /* Check Pods Manifest.lock */,
+				D64D797C1CD4DB5800D8DCB7 /* Sources */,
+				D64D797D1CD4DB5800D8DCB7 /* Frameworks */,
+				D64D797E1CD4DB5800D8DCB7 /* Resources */,
+				A62F31AE5C77DA94A42CBE4F /* Embed Pods Frameworks */,
+				C0AD65C77E73F32C379B99E6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kiwi-bdd";
+			productName = "kiwi-bdd";
+			productReference = D64D79801CD4DB5800D8DCB7 /* kiwi-bdd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D64D79981CD4DB5900D8DCB7 /* kiwi-bddTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64D79A51CD4DB5900D8DCB7 /* Build configuration list for PBXNativeTarget "kiwi-bddTests" */;
+			buildPhases = (
+				B50C1179B4A798C6AA742F3D /* Check Pods Manifest.lock */,
+				D64D79951CD4DB5900D8DCB7 /* Sources */,
+				D64D79961CD4DB5900D8DCB7 /* Frameworks */,
+				D64D79971CD4DB5900D8DCB7 /* Resources */,
+				EC74DF389EEBEC211379F479 /* Embed Pods Frameworks */,
+				65169FFE28466684918E11F9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D64D799B1CD4DB5900D8DCB7 /* PBXTargetDependency */,
+			);
+			name = "kiwi-bddTests";
+			productName = "kiwi-bddTests";
+			productReference = D64D79991CD4DB5900D8DCB7 /* kiwi-bddTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D64D79781CD4DB5800D8DCB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Chinsyo;
+				TargetAttributes = {
+					D64D797F1CD4DB5800D8DCB7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D64D79981CD4DB5900D8DCB7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D64D797F1CD4DB5800D8DCB7;
+					};
+				};
+			};
+			buildConfigurationList = D64D797B1CD4DB5800D8DCB7 /* Build configuration list for PBXProject "kiwi-bdd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D64D79771CD4DB5800D8DCB7;
+			productRefGroup = D64D79811CD4DB5800D8DCB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D64D797F1CD4DB5800D8DCB7 /* kiwi-bdd */,
+				D64D79981CD4DB5900D8DCB7 /* kiwi-bddTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D64D797E1CD4DB5800D8DCB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64D79931CD4DB5800D8DCB7 /* LaunchScreen.storyboard in Resources */,
+				D64D79901CD4DB5800D8DCB7 /* Assets.xcassets in Resources */,
+				D64D798E1CD4DB5800D8DCB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64D79971CD4DB5900D8DCB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65169FFE28466684918E11F9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiwi-bddTests/Pods-kiwi-bddTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74C6FFFF90221434697C600B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A62F31AE5C77DA94A42CBE4F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiwi-bdd/Pods-kiwi-bdd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B50C1179B4A798C6AA742F3D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0AD65C77E73F32C379B99E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiwi-bdd/Pods-kiwi-bdd-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC74DF389EEBEC211379F479 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiwi-bddTests/Pods-kiwi-bddTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D64D797C1CD4DB5800D8DCB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CC90A51CD6198F0058D5C5 /* MyStack.m in Sources */,
+				D64D798B1CD4DB5800D8DCB7 /* ViewController.m in Sources */,
+				D64D79881CD4DB5800D8DCB7 /* AppDelegate.m in Sources */,
+				D64D79851CD4DB5800D8DCB7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64D79951CD4DB5900D8DCB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64D799E1CD4DB5900D8DCB7 /* kiwi_bddTests.m in Sources */,
+				D6CC90A71CD61BC50058D5C5 /* MyStackSpec.m in Sources */,
+				D6CC90A91CD61E730058D5C5 /* MathSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D64D799B1CD4DB5900D8DCB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D64D797F1CD4DB5800D8DCB7 /* kiwi-bdd */;
+			targetProxy = D64D799A1CD4DB5900D8DCB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D64D798C1CD4DB5800D8DCB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D64D798D1CD4DB5800D8DCB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D64D79911CD4DB5800D8DCB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D64D79921CD4DB5800D8DCB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D64D79A01CD4DB5900D8DCB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D64D79A11CD4DB5900D8DCB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D64D79A31CD4DB5900D8DCB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CDD3F5C0D89C200693AA6F /* Pods-kiwi-bdd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "kiwi-bdd/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinsyo.kiwi-bdd";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D64D79A41CD4DB5900D8DCB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA9AE2052E514B46322DE790 /* Pods-kiwi-bdd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "kiwi-bdd/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinsyo.kiwi-bdd";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D64D79A61CD4DB5900D8DCB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45929795F29067090404D724 /* Pods-kiwi-bddTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "kiwi-bddTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinsyo.kiwi-bddTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kiwi-bdd.app/kiwi-bdd";
+			};
+			name = Debug;
+		};
+		D64D79A71CD4DB5900D8DCB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79592D5986B48276189CE83 /* Pods-kiwi-bddTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "kiwi-bddTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinsyo.kiwi-bddTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kiwi-bdd.app/kiwi-bdd";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D64D797B1CD4DB5800D8DCB7 /* Build configuration list for PBXProject "kiwi-bdd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64D79A01CD4DB5900D8DCB7 /* Debug */,
+				D64D79A11CD4DB5900D8DCB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D64D79A21CD4DB5900D8DCB7 /* Build configuration list for PBXNativeTarget "kiwi-bdd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64D79A31CD4DB5900D8DCB7 /* Debug */,
+				D64D79A41CD4DB5900D8DCB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D64D79A51CD4DB5900D8DCB7 /* Build configuration list for PBXNativeTarget "kiwi-bddTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64D79A61CD4DB5900D8DCB7 /* Debug */,
+				D64D79A71CD4DB5900D8DCB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D64D79781CD4DB5800D8DCB7 /* Project object */;
+}

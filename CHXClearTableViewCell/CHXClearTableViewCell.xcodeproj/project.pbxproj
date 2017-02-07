@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		653BB4471CA28CD500816E49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BB4461CA28CD500816E49 /* AppDelegate.swift */; };
+		653BB4491CA28CD500816E49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BB4481CA28CD500816E49 /* ViewController.swift */; };
+		653BB44C1CA28CD500816E49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653BB44A1CA28CD500816E49 /* Main.storyboard */; };
+		653BB44E1CA28CD500816E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653BB44D1CA28CD500816E49 /* Assets.xcassets */; };
+		653BB4511CA28CD500816E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653BB44F1CA28CD500816E49 /* LaunchScreen.storyboard */; };
+		653BB45C1CA28CD500816E49 /* CHXClearTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BB45B1CA28CD500816E49 /* CHXClearTableViewCellTests.swift */; };
+		653BB4671CA28CE900816E49 /* CHXClearTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BB4661CA28CE900816E49 /* CHXClearTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		653BB4691CA28CF600816E49 /* CHXClearTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653BB4681CA28CF600816E49 /* CHXClearTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		653BB4581CA28CD500816E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 653BB43B1CA28CD500816E49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 653BB4421CA28CD500816E49;
+			remoteInfo = CHXClearTableViewCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		653BB4431CA28CD500816E49 /* CHXClearTableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHXClearTableViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		653BB4461CA28CD500816E49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		653BB4481CA28CD500816E49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		653BB44B1CA28CD500816E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		653BB44D1CA28CD500816E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		653BB4501CA28CD500816E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		653BB4521CA28CD500816E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		653BB4571CA28CD500816E49 /* CHXClearTableViewCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHXClearTableViewCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		653BB45B1CA28CD500816E49 /* CHXClearTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHXClearTableViewCellTests.swift; sourceTree = "<group>"; };
+		653BB45D1CA28CD500816E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		653BB4661CA28CE900816E49 /* CHXClearTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHXClearTableViewCell.swift; sourceTree = "<group>"; };
+		653BB4681CA28CF600816E49 /* CHXClearTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHXClearTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		653BB4401CA28CD500816E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653BB4541CA28CD500816E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		653BB43A1CA28CD500816E49 = {
+			isa = PBXGroup;
+			children = (
+				653BB4451CA28CD500816E49 /* CHXClearTableViewCell */,
+				653BB45A1CA28CD500816E49 /* CHXClearTableViewCellTests */,
+				653BB4441CA28CD500816E49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		653BB4441CA28CD500816E49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				653BB4431CA28CD500816E49 /* CHXClearTableViewCell.app */,
+				653BB4571CA28CD500816E49 /* CHXClearTableViewCellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		653BB4451CA28CD500816E49 /* CHXClearTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				653BB4461CA28CD500816E49 /* AppDelegate.swift */,
+				653BB4481CA28CD500816E49 /* ViewController.swift */,
+				653BB4681CA28CF600816E49 /* CHXClearTableViewController.swift */,
+				653BB4661CA28CE900816E49 /* CHXClearTableViewCell.swift */,
+				653BB44A1CA28CD500816E49 /* Main.storyboard */,
+				653BB44D1CA28CD500816E49 /* Assets.xcassets */,
+				653BB44F1CA28CD500816E49 /* LaunchScreen.storyboard */,
+				653BB4521CA28CD500816E49 /* Info.plist */,
+			);
+			path = CHXClearTableViewCell;
+			sourceTree = "<group>";
+		};
+		653BB45A1CA28CD500816E49 /* CHXClearTableViewCellTests */ = {
+			isa = PBXGroup;
+			children = (
+				653BB45B1CA28CD500816E49 /* CHXClearTableViewCellTests.swift */,
+				653BB45D1CA28CD500816E49 /* Info.plist */,
+			);
+			path = CHXClearTableViewCellTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		653BB4421CA28CD500816E49 /* CHXClearTableViewCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653BB4601CA28CD500816E49 /* Build configuration list for PBXNativeTarget "CHXClearTableViewCell" */;
+			buildPhases = (
+				653BB43F1CA28CD500816E49 /* Sources */,
+				653BB4401CA28CD500816E49 /* Frameworks */,
+				653BB4411CA28CD500816E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHXClearTableViewCell;
+			productName = CHXClearTableViewCell;
+			productReference = 653BB4431CA28CD500816E49 /* CHXClearTableViewCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		653BB4561CA28CD500816E49 /* CHXClearTableViewCellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653BB4631CA28CD500816E49 /* Build configuration list for PBXNativeTarget "CHXClearTableViewCellTests" */;
+			buildPhases = (
+				653BB4531CA28CD500816E49 /* Sources */,
+				653BB4541CA28CD500816E49 /* Frameworks */,
+				653BB4551CA28CD500816E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				653BB4591CA28CD500816E49 /* PBXTargetDependency */,
+			);
+			name = CHXClearTableViewCellTests;
+			productName = CHXClearTableViewCellTests;
+			productReference = 653BB4571CA28CD500816E49 /* CHXClearTableViewCellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		653BB43B1CA28CD500816E49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = winsan;
+				TargetAttributes = {
+					653BB4421CA28CD500816E49 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					653BB4561CA28CD500816E49 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 653BB4421CA28CD500816E49;
+					};
+				};
+			};
+			buildConfigurationList = 653BB43E1CA28CD500816E49 /* Build configuration list for PBXProject "CHXClearTableViewCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 653BB43A1CA28CD500816E49;
+			productRefGroup = 653BB4441CA28CD500816E49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				653BB4421CA28CD500816E49 /* CHXClearTableViewCell */,
+				653BB4561CA28CD500816E49 /* CHXClearTableViewCellTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		653BB4411CA28CD500816E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653BB4511CA28CD500816E49 /* LaunchScreen.storyboard in Resources */,
+				653BB44E1CA28CD500816E49 /* Assets.xcassets in Resources */,
+				653BB44C1CA28CD500816E49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653BB4551CA28CD500816E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		653BB43F1CA28CD500816E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653BB4491CA28CD500816E49 /* ViewController.swift in Sources */,
+				653BB4471CA28CD500816E49 /* AppDelegate.swift in Sources */,
+				653BB4671CA28CE900816E49 /* CHXClearTableViewCell.swift in Sources */,
+				653BB4691CA28CF600816E49 /* CHXClearTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653BB4531CA28CD500816E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653BB45C1CA28CD500816E49 /* CHXClearTableViewCellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		653BB4591CA28CD500816E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 653BB4421CA28CD500816E49 /* CHXClearTableViewCell */;
+			targetProxy = 653BB4581CA28CD500816E49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		653BB44A1CA28CD500816E49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				653BB44B1CA28CD500816E49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		653BB44F1CA28CD500816E49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				653BB4501CA28CD500816E49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		653BB45E1CA28CD500816E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		653BB45F1CA28CD500816E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		653BB4611CA28CD500816E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CHXClearTableViewCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winsan.CHXClearTableViewCell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		653BB4621CA28CD500816E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CHXClearTableViewCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winsan.CHXClearTableViewCell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		653BB4641CA28CD500816E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CHXClearTableViewCellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winsan.CHXClearTableViewCellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHXClearTableViewCell.app/CHXClearTableViewCell";
+			};
+			name = Debug;
+		};
+		653BB4651CA28CD500816E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CHXClearTableViewCellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winsan.CHXClearTableViewCellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHXClearTableViewCell.app/CHXClearTableViewCell";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		653BB43E1CA28CD500816E49 /* Build configuration list for PBXProject "CHXClearTableViewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653BB45E1CA28CD500816E49 /* Debug */,
+				653BB45F1CA28CD500816E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653BB4601CA28CD500816E49 /* Build configuration list for PBXNativeTarget "CHXClearTableViewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653BB4611CA28CD500816E49 /* Debug */,
+				653BB4621CA28CD500816E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		653BB4631CA28CD500816E49 /* Build configuration list for PBXNativeTarget "CHXClearTableViewCellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653BB4641CA28CD500816E49 /* Debug */,
+				653BB4651CA28CD500816E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 653BB43B1CA28CD500816E49 /* Project object */;
+}

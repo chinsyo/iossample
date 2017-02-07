@@ -1,0 +1,26 @@
+//
+//  FRP-Prefix.pch
+//  FRP
+//
+//  Created by Chinsyo on 16/5/16.
+//  Copyright © 2016年 Chinsyo. All rights reserved.
+//
+
+#ifndef FRP_Prefix_pch
+#define FRP_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <ReactiveViewModel/ReactiveViewModel.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <500px-iOS-api/PXAPI.h>
+#import <libextobjc/EXTScope.h>
+
+#import "FRPAppDelegate.h"
+#define AppDelegate ((FRPAppDelegate *)[[UIApplication sharedApplication] delegate])
+
+#endif /* FRP_Prefix_pch */

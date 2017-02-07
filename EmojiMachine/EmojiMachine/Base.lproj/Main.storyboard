@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="R1c-Ip-OcT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bth-gd-x73">
+                                <rect key="frame" x="0.0" y="146" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vPH-6K-1pt"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uO0-lq-HuF"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYm-rw-UmK">
+                                <rect key="frame" x="16" y="50" width="288" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="fcJ-B7-OxH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjO-Kk-FkY">
+                                <rect key="frame" x="20" y="461" width="280" height="60"/>
+                                <color key="backgroundColor" red="0.085875543420000006" green="0.82924952649999994" blue="0.27798362090000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aQR-sv-1yA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="startButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dX1-5s-pYd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VYm-rw-UmK" firstAttribute="centerX" secondItem="bth-gd-x73" secondAttribute="centerX" id="18J-Xs-dnM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VYm-rw-UmK" secondAttribute="trailing" id="1Nj-nQ-BsT"/>
+                            <constraint firstItem="bth-gd-x73" firstAttribute="trailing" secondItem="R1c-Ip-OcT" secondAttribute="trailing" id="4jl-pZ-SGm"/>
+                            <constraint firstItem="R1c-Ip-OcT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9cd-pb-bV9"/>
+                            <constraint firstItem="QjO-Kk-FkY" firstAttribute="trailing" secondItem="bth-gd-x73" secondAttribute="trailing" constant="-20" id="KWW-Gf-QbQ"/>
+                            <constraint firstItem="bth-gd-x73" firstAttribute="top" secondItem="VYm-rw-UmK" secondAttribute="bottom" constant="26" id="Ofk-WT-KBv"/>
+                            <constraint firstItem="VYm-rw-UmK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="PVv-53-SM4"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="VYm-rw-UmK" secondAttribute="leading" id="aQS-CA-8pz"/>
+                            <constraint firstItem="R1c-Ip-OcT" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="fDV-BD-mxC"/>
+                            <constraint firstItem="QjO-Kk-FkY" firstAttribute="leading" secondItem="bth-gd-x73" secondAttribute="leading" constant="20" id="h90-lL-VMB"/>
+                            <constraint firstItem="bth-gd-x73" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tb4-rB-ELe"/>
+                            <constraint firstItem="R1c-Ip-OcT" firstAttribute="leading" secondItem="QjO-Kk-FkY" secondAttribute="leading" constant="-20" id="vko-GP-s0C"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QjO-Kk-FkY" secondAttribute="bottom" constant="47" id="xYj-aR-Xpn"/>
+                            <constraint firstItem="bth-gd-x73" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yO0-bc-bAp"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="R1c-Ip-OcT" id="sle-Ea-ejG"/>
+                        <outlet property="emojiPickerView" destination="bth-gd-x73" id="tKB-aj-6hm"/>
+                        <outlet property="resultLabel" destination="VYm-rw-UmK" id="5YZ-qt-ALu"/>
+                        <outlet property="startButton" destination="QjO-Kk-FkY" id="yXz-YS-165"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="240" height="320"/>
+    </resources>
+</document>
